@@ -18,6 +18,7 @@ public class CalculatorPrototype implements CalculatorIF {
     }
 
     public int divide(int m, int n){
+        if(n == 0)  throw new ArithmeticException();
         int r=0;
         while(m>=n){
             m = m-n;
